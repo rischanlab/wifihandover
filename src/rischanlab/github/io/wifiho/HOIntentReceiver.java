@@ -19,8 +19,13 @@ public class HOIntentReceiver extends BroadcastReceiver {
 		// TODO Auto-generated method stub
 		Log.i(TAG, "HOIntentReceiver: "+ intent);
 		
-		//String action = intent.getAction();
-		//if(action.equals(object))
+		String action = intent.getAction();
+		if(action.equals(HOService.AP_LIST_UPDATE_ACTION)){
+			activity.updateAPListUI();
+		}else if(action.equals(HOService.WIFI_UPDATE_ACTION)){
+			activity.updateStatusUI();
+		}
+		
 
 	}
 
