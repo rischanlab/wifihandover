@@ -9,5 +9,7 @@
     <string name="stravailable">Available</string>
     <string name="strregistered">Registered</string>
     <string name="strListRegAP"></string>
+    <string name="strWifidisable">Wifi is disabled</string>
+    <string name="wifi_is_disabled">Wifi is disabled</string>
 
 </resources>

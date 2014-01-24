@@ -54,8 +54,6 @@
         android:id="@+id/StackMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/groupTabs"
-        android:layout_below="@+id/groupTabs"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="21dp" >
 
@@ -70,7 +68,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
         </ListView>
-
     </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/StackMain" >
+
+        <ImageButton
+            android:id="@+id/buttonRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_refresh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <TextView
+			android:text="@string/wifi_is_disabled"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#FFFFFF"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="center_vertical"
+			android:layout_marginTop="2dip" />
+    </LinearLayout>
 
 </RelativeLayout>
