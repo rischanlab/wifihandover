@@ -13,5 +13,8 @@
     <string name="wifi_is_disabled">Wifi is disabled</string>
     <string name="strconn">con :</string>
     <string name="strJudul">Just for Testing</string>
+    <string name="about">About</string>
+    <string name="aboutf">Just for research purpose only</string>
+    <string name="title_activity_hoabout">HOAbout</string>
 
 </resources>

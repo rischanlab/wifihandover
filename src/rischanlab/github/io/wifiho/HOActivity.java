@@ -207,7 +207,17 @@ public class HOActivity extends Activity {
         return true;
     }
     
-    public void updateUI(){
+    @Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+    	super.onOptionsItemSelected(item);
+        Intent intent = new Intent(HOActivity.this, HOAbout.class);
+        /*Here ActivityA is current Activity and ColourActivity is the target Activity.*/
+        startActivity(intent);
+        return true;
+		
+	}
+
+	public void updateUI(){
     	if (mService == null) {
     		return;
     	}

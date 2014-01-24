@@ -7,9 +7,10 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -25,9 +26,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name="HOService"></service>
-        <receiver android:name="HOBoot"></receiver>
-        <receiver android:name="HOIntentReceiver"></receiver>
+
+        <service android:name="rischanlab.github.io.wifiho.HOService" >
+        </service>
+
+        <receiver android:name="rischanlab.github.io.wifiho.HOBoot" >
+        </receiver>
+        <receiver android:name="rischanlab.github.io.wifiho.HOIntentReceiver" >
+        </receiver>
+
+        <activity
+            android:name="rischanlab.github.io.wifiho.HOAbout"
+            android:label="@string/title_activity_hoabout" >
+        </activity>
     </application>
 
 </manifest>
