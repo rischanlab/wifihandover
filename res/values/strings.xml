@@ -4,5 +4,9 @@
     <string name="app_name">wifihandover</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="connectiontoString">Connecting to :</string>
+    <string name="APname">None</string>
+    <string name="stravailable">Available</string>
+    <string name="strregistered">Registered</string>
 
 </resources>

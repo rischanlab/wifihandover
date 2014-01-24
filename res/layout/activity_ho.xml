@@ -9,8 +9,68 @@
     tools:context=".HOActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/connectiontoString"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/APname"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/groupTabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tabAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/stravailable" />
+
+        <RadioButton
+            android:id="@+id/tabRegistered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strregistered" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/StackMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/groupTabs"
+        android:layout_below="@+id/groupTabs"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp" >
+
+        <ListView
+            android:id="@+id/listAP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/listRegAP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+    </FrameLayout>
 
 </RelativeLayout>
