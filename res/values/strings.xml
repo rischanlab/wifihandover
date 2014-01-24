@@ -8,5 +8,6 @@
     <string name="APname">None</string>
     <string name="stravailable">Available</string>
     <string name="strregistered">Registered</string>
+    <string name="strListRegAP"></string>
 
 </resources>

@@ -9,7 +9,7 @@
     tools:context=".HOActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -21,10 +21,10 @@
         android:id="@+id/textStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignBaseline="@+id/text"
+        android:layout_alignBottom="@+id/text"
         android:layout_marginLeft="19dp"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_toRightOf="@+id/text"
         android:text="@string/APname"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -32,8 +32,8 @@
         android:id="@+id/groupTabs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/text"
+        android:layout_below="@+id/text"
         android:orientation="horizontal" >
 
         <RadioButton
